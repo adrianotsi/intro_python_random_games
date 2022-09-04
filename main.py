@@ -3,18 +3,21 @@ import adivinhacao
 
 def escolhe_jogo():
     print("*********************************")
-    print("*******AAALO!*******")
+    print("******AAALO! How you doing?******")
     print("*********************************")
 
-    print("[1] Jogar adivinhação [2] Créditos]")
+    print("[1] Jogar adivinhação [2] Jogar advinhação (Com resposta) [3] Créditos")
 
     opt = int(input("Selecione uma opção: "))
 
     if(opt == 1):
-        print("Jogar adivinhaçãooo")
+        print("SHOW! Vamos jogar adivinhaçãoo")
         adivinhacao.jogar()
     elif(opt == 2):
-        print("Créditos")
+        print("Ok então vamos jogar adivinhaçãooo, mas exibindo a resposta")
+        adivinhacao.jogar(True)
+    elif (opt == 3):
+        print("... segue os créditos")
         credits.show()
 
 if(__name__ == "__main__"):
