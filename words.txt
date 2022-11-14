@@ -2,4 +2,3 @@ Python
 JavaScript
 PHP
 React
-Palavra
